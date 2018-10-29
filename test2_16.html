@@ -1,0 +1,41 @@
+<!--设置表格边框样式
+    表格的边框宽度:border属性即表格边框，可以控制表格的边线宽度、颜色等。
+        如果用户不指定border属性，那么浏览器将不会显示表格的边框。
+        <table border="边框宽度" bordercolor="边框颜色">
+    表格中的单元格间距：cellspacing属性可以对单元格之间的间距进行设置，宽度值是像素；
+    表格中文字与边框间距：cellpadding属性，单元格中的文字在没有设置的情况下都会紧贴单元格的边框
+        <table cellspacing="单元格间距值">
+        <table cellpadding="文字与边框间距值">
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>设置表格的边框宽度和边框颜色、单元格间距、文字与边框间距</title>
+    </head>
+    <body>
+        <table width="600" height="120" border="2" bordercolor="red" cellspacing="6" cellpadding="8"
+                background="C:\Users\12098\Pictures\Camera Roll\dawn-landscape-nature-414171.jpeg">
+            <caption>设置表格边框宽度和边框颜色</caption>
+            <tr>
+                <td colspan="2" align="center">
+                    学生班级信息
+                </td>
+            </tr>
+            <tr>
+                <td width="60" height="50">班级</td>
+                <td>姓名</td>
+            </tr>
+            <tr>
+                <td rowspan="2">四、五年级</td>
+                <td bgcolor="blue">李春华</td>
+            </tr>
+            <tr>
+                <!--
+                <td style="border-color:#ff0055; background-color:aquamarine; ">四年级</td>
+                -->
+                <td>张淼</td>
+            </tr>
+        </table>
+    </body>
+</html>

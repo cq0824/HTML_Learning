@@ -1,0 +1,32 @@
+<!--height属性也可以用来设置表中行的高度和行的背景颜色、设置单元格对其方式
+    <tr height="行的高度" bgcolor="行的背景颜色">
+    <tr align="水平对齐（left, right, center）" valign="垂直对齐（top, bottom, middle）">
+-->
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html charset=utf-8" />
+        <title>设置行的高度和背景颜色</title>
+    </head>
+    <body>
+        <table width="600" border="1" height="120">
+            <caption>设置行的高度和背景颜色</caption>
+            <thead>
+                <tr height="60" bgcolor="#999999" align="right" valign="top">
+                    <th>班级</th>
+                    <th>姓名</th>
+                </tr>
+            </thead>
+            <tbody bgcolor="#009900" align="left">
+                <tr height="50" bgcolor="#009999" valign="bottom">
+                    <td>五年级</td>
+                    <td>李春华</td>
+                </tr>
+                <tr height="40" valign="middle">
+                    <td>四年级</td>
+                    <td>张淼</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
