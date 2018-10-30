@@ -1,0 +1,105 @@
+<!--
+    form标签：表单中的所有字段都要写在<form></form>标签中，定义整个表单
+    input标签：表单中的各个表单项，除了组合框、文本区域外，几乎所有的字段都要用<input>标签来定义，
+              这些字段通过type属性定义类型。<input>标签一般需要制定name和value属性。在HTML中，input标签没有结束标签。
+    testarea标签：标签定义多行的文本输入控件，文本区中可容纳无限数量的文本，其中文本的默认字体是等宽字体，可以通过cols
+                 和rows属性来规定<textarea>的尺寸。
+    select标签：生成列表。
+-->
+<!doctype html>
+<htmL>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>form标签</title>
+    </head>
+    <body>
+        <form name="form1" action="form_action.asp" method="get" enctype="application/x-www-form-urlencoded" target=“_parent”>
+            <!--
+                action指定提交这个表单是执行处理程序。
+                    当用户提交表单时，服务器会根据action指定的程序处理表单内容,表单处理程序就是表单中收集到的材料要传到的程序地址。
+                name属性是为表单命名，name属性不是表单中必须的属性，它只是为了区别提交到后台的表单，以免出现混乱。
+                method属性主要是用来指定表单的数据提交到服务器时使用的HTTP，其取值可以是get或者post。
+                    post的传送方法是表单数据包含在表单主题中，然后被送到处理程序中。
+                    get的传送方法是表单的数据被传送到action属性指定的URL，然后这个新的URL被送到处理程序中。
+                enctype属性是用来设置表单信息提交的编码方式，默认为URL-encoded。
+                    代码中的编码方式是默认的编码方式，当enctype取值为multipart/form-data时，代表的含义是MIME编码，上传文件的表单必须选择该项。
+            -->
+            <p>姓名：<input type="text" name="fname" size="10" maxlength="8" value="abc"></p>
+            <p>密码：<input type="text" name="lname" size="10" maxlength="8" value="123456"></p>
+            <input type="submit" value="确定" />
+            
+            <p>女<input type="radio" value="女" name="性别" ></p>
+            <p>请选择一种语言：
+                <input name="radio" type="radio" value="radiobutton" checked="checked"/>
+                英语
+                <input name="radio" type="radio" value="radiobutton"/>
+                日语
+                <input name="radio" type="radio" value="radiobutton"/>
+                法语   
+            </p>
+
+            <input name="checkbox" type="checkbox" value="checkbox" checked="checked" />
+            旅游
+            <input name="checkbox" type="checkbox" value="checkbox" />
+            音乐
+            <input name="checkbox" type="checkbox" value="checkbox" />
+            运动
+            <input name="checkbox" type="checkbox" value="checkbox" />
+            游泳           
+            <!--
+                type可以选择的类型种类如下：
+                text:表示类型为文本框；
+                button：表示类型为按钮；
+                checkbox：表示类型为复选框；
+                radio：表示类型为单选框；
+                hidden：表示类型为隐藏域；
+                image：表示类型为图片；
+                password：表示类型为密码输入框；
+                submit：表示类型为提交按钮；
+                reset：表示类型为重置按钮；
+                file：表示类型为文件域；
+                另外，name表示表单元素的名称，由于处理表单的程序要确定数据来源，
+                一般需要指定name属性，value为表单元素的默认值
+            -->
+            <p>姓名：<input type="text" name="fname"></p>
+            <p>密码：<input type="password" name="lname" size="20" maxlength="15"></p>
+
+            <p>文件：<input type="file" name="file" value="文件目录"></p>
+            <p>重置：<input type="reset" value="重置" name="reset"></p>
+            
+            <br/>
+            <input name="button" type="button" value="点击试试" onclick="window.close()" />
+            <br/>
+            <!--
+                textarea标签语法：
+                <textarea name="名称" cols="列数" content="text/html" warp="换行方式">文本内容</textarea>
+                warp:换行方式有三种自动换行virtual、不换行off、手动换行physical
+            -->
+            <textarea name="content" cols="40" rows="6" wrap="virtual">
+    十年生死两茫茫，不思量，自难忘。千里孤坟，无处话凄凉。纵使相逢应不识，尘满面，鬓如霜。
+    夜来幽梦忽还乡，小轩窗，正梳妆。相顾无言，惟有泪千行。料得年年肠断处，明月夜，短松冈。
+            </textarea>
+
+            <br/>
+            <select name="1">
+                <!--语法描述如下：
+                    <select multiple size="可见选项数"
+                    <option value="值">
+                    </select>
+                    如果size的值大于1，则会生成一个普通的可以按住CTRL键进行行多选的列表；
+                    如果不设置size值，或值为1，multiple的属性就没有意义
+                -->
+                <option value="美食小吃">美食小吃</option>
+                <option value="火锅">火锅</option>
+                <option value="麻辣烫">麻辣烫</option>
+                <option value="砂锅">砂锅</option>
+            </select>
+            <select name="1" size="4" multiple>
+                <option value="美食小吃">美食小吃</option>
+                <option value="火锅">火锅</option>
+                <option value="麻辣烫">麻辣烫</option>
+                <option value="砂锅">砂锅</option>
+            </select>
+        </form>
+    </body>
+</htmL>

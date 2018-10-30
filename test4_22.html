@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>创建综合表单</title>
+    </head>
+    <body>
+        <table width="952" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td><img src="C:\Users\12098\Pictures\Camera Roll\dawn-landscape-nature-414171.jpeg" widhh=1000 height="234"/></td>
+            </tr>
+            <tr>
+                <td valign="top" bgcolor="#f2f6f7">
+                    <form action="" method="post" enctype="multipart/form-data" name="form1" id="form1">
+                    <table width="100%" border="0" cellspacing="2" cellpadding="0">
+                        <tr>
+                            <td width="21%" height="30" align="center" valign="middle">用户名：</td>
+                            <td width="79%">
+                                <label for="name"></label>
+                                <input name="name" type="text" id="name" size="20" maxlength="20" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">密码：</td>
+                            <td>
+                                <label for="password"></label>
+                                <input name="password" type="password" id="password" size="20" maxlength="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">确认密码：</td>
+                            <td>
+                                <label for="password"></label>
+                                <input name="password2" type="password" id="password2" size="20" maxlength="20">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">性别：</td>
+                            <td>
+                                <input name="radio" type="radio" id="radio" value="radio" checked="checked" />
+                                <label for="radio">
+                                    男
+                                    <input name="radio" type="radio" id="radio2" value="radio" />
+                                    女
+                                </label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">爱好：</td>
+                            <td>
+                                <input name="checkbox" type="checkbox" id="checkbox" />
+                                <label for="checkbox">写作
+                                    <input name="checkbox2" type="checkbox" id="checkbox2" />
+                                    唱歌
+                                </label>        
+                                    <input name="checkbox3" type="checkbox" id="checkbox3" />
+                                    舞蹈
+                                    <input name="checkbox4" type="checkbox" id="checkbox4" />
+                                    游泳
+                                    <input name="checkbox5" type="checkbox" id="checkbox5" />
+                                    其他
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">电话：</td>
+                            <td>
+                                <label for="select"></label>
+                                <select name="select" id="select">
+                                    <option>固定电话</option>
+                                    <option>移动电话</option>
+                                </select>
+                                <label for="textfield"></label>
+                                <input type="text" name="textfield" id="textfield" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">地址：</td>
+                            <td>
+                                <label for="select2"></label>
+                                <select name="select2" size="4" id="select2">
+                                    <option>徐州市</option>
+                                    <option>南京市</option>
+                                    <option>无锡市</option>
+                                    <option>苏州市</option>
+                                    <option>常州市</option>
+                                    <option>镇江市</option>
+                                    <option>盐城市</option>
+                                    <option>淮安市</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">头像：</td>
+                            <td>
+                                <label for="image"></label>
+                                <input name="image" type="file" id="image" size="30" maxlength="30" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle">自评：</td>
+                            <td>
+                                <label for="content"></label>
+                                <textarea name="content" id="content" cols="50" rows="10"></textarea> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="30" align="center" valign="middle" >
+                                <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent', this, 0)">
+                                <option>友情链接</option>
+                                <option value="http://weibo.com">新浪微博</option>
+                                </select>
+                            </td>
+                            <td>
+                                <input type="submit" name="button" id="button" value="确认" />
+                                <input type="reset" name="button2" id="button2" value="重置" />
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
